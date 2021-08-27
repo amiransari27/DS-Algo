@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>XMLHttpRequest</h1>
+    </body>
+
+    <script>
+        console.log('start')
+
+        const xhr = new XMLHttpRequest()
+
+        xhr.onload = function(){
+            console.log('success',this)
+        }
+
+        // this will bind window object
+        // xhr.onload = () => {
+        //     console.log('success',xhr)
+        // }
+
+        xhr.onerror= function(err){
+            console.log('err', err)
+        }
+
+        xhr.open('get', 'https://pokeapi.co/api/v2/pokemon/ditto',true)
+        xhr.setRequestHeader('Content-Type', 'application/json')
+        xhr.send()
+
+        console.log('end')
+    </script>
+
+<script>
+   /*  console.log('start')
+
+    function abc() {
+        const xhr = new XMLHttpRequest()
+
+        // xhr.onload = function () {
+        //     console.log('success', this)
+        // }
+
+        // this will bind window object
+        xhr.onload = () => {
+            console.log('success',this, xhr)
+        }
+
+        xhr.onerror = function (err) {
+            console.log('err', err)
+        }
+
+        xhr.open('get', 'https://pokeapi.co/api/v2/pokemon/ditto', true)
+        xhr.setRequestHeader('Content-Type', 'application/json')
+        xhr.send()
+    }
+
+    const a = {abc: abc}
+
+    a.abc()
+
+    console.log('end') */
+</script>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Iterator Pattern</h1>
+</body>
+
+<script>
+    console.log('start')
+
+    const items = [1, 'todo', false, 1.2, {name: 'any'}]
+
+    function Iterator(items) {
+        this.items = items
+        this.index = 0
+    }
+
+    Iterator.prototype = {
+        hasNext: function(){
+            return this.index < this.items.length
+        },
+
+        next(){
+            console.log(this)
+            return this.items[this.index++]
+        }
+    }
+
+    const iter = new Iterator(items)
+
+    while(iter.hasNext()){
+        console.log(iter.next())
+    }
+
+    console.log('end')
+</script>
+
+</html>

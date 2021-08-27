@@ -1,0 +1,153 @@
+<html>
+
+<head>
+    <title>Test</title>
+    <style>
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        @media only screen and (min-width: 768px) {
+            .recipe-container {
+                display: flex;
+                padding: 40px 24px;
+                width: 100%;
+                /* flex-wrap: wrap; */
+            }
+
+        }
+
+
+        .product-image {
+            background: rgb(0, 0, 0);
+            border-radius: 10px;
+            max-width: 50%;
+        }
+
+        .product-image img {
+            width: 100%;
+        }
+
+        .product-info {
+            margin-left: 40px;
+            max-width: 50%;
+        }
+
+        .product-caption .caption {
+            color: rgb(51, 55, 71);
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .product-caption .caption-label {
+            color: rgb(255, 255, 255);
+            font-size: 12px;
+            font-weight: 500;
+            background: rgb(56, 136, 255);
+            border-radius: 4px;
+            padding: 3px 10px;
+            margin-left: 1em;
+        }
+
+        .product-title {
+            align-items: flex-start;
+            margin: 28px 0px;
+            display: flex;
+        }
+
+        .product-title .recipe-title {
+            color: rgb(0, 0, 0);
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 42px;
+            margin: 0px;
+        }
+
+        .product-title .product-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .product-status {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 46px;
+        }
+
+        .product-status span {
+            display: block;
+        }
+
+        .product-status .status-caption {
+            color: rgb(74, 74, 74);
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .product-status .status-content {
+            color: rgb(29, 29, 29);
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .btn-trynow {
+            background: rgb(242, 244, 248);
+            border-radius: 25px;
+            color: rgb(255, 50, 120);
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 14px 34px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="recipe-container">
+
+            <div class="product-image">
+                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_485,f_auto,ar_485:605,c_fit,q_auto:eco/dpr_1/image/singles/eat/meals/EAT4026/primary/2_1.jpg"
+                    alt="Product" />
+            </div>
+            <div class="product-info">
+                <div class="product-caption">
+                    <span class="caption">RECIPE OF THE DAY</span>
+                    <span class="caption-label">LUNCH</span>
+                </div>
+                <div class="product-title">
+                    <h3 class="recipe-title">Tofu Bhurji with Lachha Paratha</h3>
+                    <div class="product-icons">
+                        <span class="">X</span>
+                        <span class="">IX</span>
+                    </div>
+                </div>
+                <div class="product-status">
+                    <div class="status-time">
+                        <span class="status-caption">Time</span>
+                        <span class="status-content">40 min</span>
+                    </div>
+                    <div class="status-difficulty">
+                        <span class="status-caption">Difficulty</span>
+                        <span class="status-content">Intermediate</span>
+                    </div>
+                    <div class="status-serve">
+                        <span class="status-caption">Serve</span>
+                        <span class="status-content">2</span>
+                    </div>
+                </div>
+                <div class="product-btn">
+                    <button class="btn-trynow">
+                        TRY NOW
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
