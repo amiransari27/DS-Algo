@@ -56,8 +56,8 @@
             curr = curr.next
         }
 
+        preOne.next = dummyTwo.next // to avoid null pointer eception
         preZero.next = dummyOne.next
-        preOne.next = dummyTwo.next
         preTwo.next = null
 
         return dummyZero.next
