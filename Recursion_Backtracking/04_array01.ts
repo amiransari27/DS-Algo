@@ -66,4 +66,21 @@
     }
     console.log(betterFindIndex(arr, 0, 7))
 
+    function lastIndex(arr: number[], idx: number, x: number): number{
+        if (idx > arr.length - 1){
+            return -1
+        }
+    
+        let liisa: number = lastIndex(arr, idx +1 , x)
+        if (liisa > -1){
+            return liisa
+        }else if (arr[idx] === x){
+            return idx
+        }
+    }
+    
+    console.log(lastIndex(arr,0, 6))
+    
+    
+
 })()
